@@ -1,12 +1,12 @@
-package com.example.basicandroid.SignIn
+package com.example.basicandroid.home
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.basicandroid.R
 
-class SignInActivity : AppCompatActivity() {
+class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sign_in)
+        setContentView(R.layout.activity_home)
     }
 }

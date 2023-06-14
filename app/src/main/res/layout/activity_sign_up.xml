@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".signIn.SignInActivity">
-
+    tools:context=".signUp.SignUpActivity">
     <TextView
         android:id="@+id/tvWelcom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dimen12"
         android:layout_marginTop="@dimen/dimen180"
-        android:text="@string/welcome_back_title"
+        android:text="@string/welcome_title"
         android:textColor="@color/blue"
         android:textSize="@dimen/dimen18"
         android:textStyle="bold"
@@ -69,6 +68,24 @@
             android:hint="@string/input_password_title" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tfRePassword"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tfPassword"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="373dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen12"
+            android:hint="@string/re_input_password_title" />
+    </com.google.android.material.textfield.TextInputLayout>
+
     <CheckBox
         android:id="@+id/cbRemeberMe"
         android:layout_width="wrap_content"
@@ -77,32 +94,34 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/btnSignIn"
         app:layout_constraintStart_toStartOf="@id/tvWelcom"
-        app:layout_constraintTop_toBottomOf="@id/tfPassword" />
+        app:layout_constraintTop_toBottomOf="@id/tfRePassword" />
 
     <Button
         android:id="@+id/btnSignIn"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/conner_green_button"
         android:text="@string/btn_sign_in"
         android:textColor="@color/white"
-        android:layout_marginStart="@dimen/dimen12"
-        app:layout_constraintEnd_toStartOf="@id/btnSignUp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="@dimen/dimen12"
         app:layout_constraintTop_toBottomOf="@id/cbRemeberMe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         tools:layout_editor_absoluteX="-16dp"
         tools:layout_editor_absoluteY="464dp" />
 
     <Button
-        android:id="@+id/btnSignUp"
-        android:layout_width="0dp"
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
         android:layout_marginStart="@dimen/dimen12"
         android:layout_height="wrap_content"
         android:background="@drawable/conner_red_button"
-        android:text="@string/btn_sign_up"
+        android:text="@string/btn_back"
         android:layout_marginEnd="@dimen/dimen12"
-        app:layout_constraintBottom_toBottomOf="@+id/btnSignIn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/btnSignIn"
-        app:layout_constraintTop_toTopOf="@+id/btnSignIn" />
+        android:layout_marginTop="@dimen/dimen12"
+        app:layout_constraintTop_toBottomOf="@id/btnSignIn"
+        app:layout_constraintStart_toStartOf="@id/btnSignIn"
+        app:layout_constraintEnd_toEndOf="@id/btnSignIn"
+        android:onClick="onBackTap"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
