@@ -7,18 +7,124 @@
     tools:context=".home.HomeActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvManagement"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:layout_marginTop="@dimen/dimen180"
+        android:text="@string/employ_management_title"
+        android:textColor="@color/green"
+        android:textSize="@dimen/dimen18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="177dp"
         tools:layout_editor_absoluteY="132dp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvSoftware"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="175dp"
-        tools:layout_editor_absoluteY="187dp" />
+        android:layout_marginTop="@dimen/dimen12"
+        android:text="@string/software_title"
+        android:textColor="@color/red"
+        android:textSize="@dimen/dimen16"
+        app:layout_constraintEnd_toEndOf="@+id/tvManagement"
+        app:layout_constraintStart_toStartOf="@+id/tvManagement"
+        app:layout_constraintTop_toBottomOf="@+id/tvManagement" />
+
+    <LinearLayout
+        android:id="@+id/btnDepartment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen12"
+        android:layout_marginTop="@dimen/dimen64"
+        android:background="@drawable/department_button"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen12"
+        app:layout_constraintEnd_toStartOf="@id/btnEmployee"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSoftware">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="TODO"
+            android:src="@drawable/icon_department" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/department_title"
+            android:textColor="@color/red"
+            android:textSize="@dimen/dimen18"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnEmployee"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen12"
+        android:layout_marginEnd="@dimen/dimen12"
+        android:background="@drawable/department_button"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen12"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDepartment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnDepartment"
+        app:layout_constraintTop_toTopOf="@+id/btnDepartment">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="TODO"
+            android:src="@drawable/icon_employee" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/employee_title"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/dimen18"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnExit"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen32"
+        android:background="@drawable/department_button"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen12"
+        app:layout_constraintEnd_toEndOf="@id/btnEmployee"
+        app:layout_constraintStart_toStartOf="@id/btnDepartment"
+        app:layout_constraintTop_toBottomOf="@id/btnDepartment">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="TODO"
+            android:src="@drawable/icon_exit" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/exit_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen18"
+            android:textStyle="bold" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

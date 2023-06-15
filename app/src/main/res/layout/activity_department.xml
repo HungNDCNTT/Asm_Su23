@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".department.DepartmentActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/departEmployee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onDepartEmployeeClick">
+
+        <ImageView
+            android:id="@+id/imvIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="@dimen/dimen12"
+            app:layout_constraintEnd_toStartOf="@id/tvUnit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_department" />
+
+        <TextView
+            android:id="@+id/tvUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen12"
+            android:layout_weight="1"
+            android:text="@string/human_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen16"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imvIcon"
+            app:layout_constraintStart_toEndOf="@id/imvIcon"
+            app:layout_constraintTop_toTopOf="@+id/imvIcon"
+            tools:layout_editor_absoluteX="121dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/blue_line" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/departAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onDepartAdminClick">
+
+        <ImageView
+            android:id="@+id/imvIcon2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="@dimen/dimen12"
+            app:layout_constraintEnd_toStartOf="@id/tvUnit2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_department" />
+
+        <TextView
+            android:id="@+id/tvUnit2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen12"
+            android:layout_weight="1"
+            android:text="@string/administrative_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen16"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imvIcon2"
+            app:layout_constraintStart_toEndOf="@id/imvIcon2"
+            app:layout_constraintTop_toTopOf="@+id/imvIcon2"
+            tools:layout_editor_absoluteX="121dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/blue_line" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/departTraining"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onDepartTrainingClick">
+
+        <ImageView
+            android:id="@+id/imvIcon3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="@dimen/dimen12"
+            app:layout_constraintEnd_toStartOf="@id/tvUnit3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_department" />
+
+        <TextView
+            android:id="@+id/tvUnit3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen12"
+            android:layout_weight="1"
+            android:text="@string/training_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen16"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imvIcon3"
+            app:layout_constraintStart_toEndOf="@id/imvIcon3"
+            app:layout_constraintTop_toTopOf="@+id/imvIcon3"
+            tools:layout_editor_absoluteX="121dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/blue_line" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -9,8 +9,8 @@ import com.example.basicandroid.home.HomeActivity
 import com.example.basicandroid.signUp.SignUpActivity
 
 class SignInActivity : AppCompatActivity() {
-    lateinit var btnSignIn: Button
-    lateinit var btnSignUp: Button
+    private lateinit var btnSignIn: Button
+    private lateinit var btnSignUp: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_in)

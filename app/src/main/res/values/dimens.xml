@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="dimen18">18sp</dimen>
+    <dimen name="dimen16">16sp</dimen>
     <dimen name="dimen12">12dp</dimen>
     <dimen name="dimen120">120dp</dimen>
     <dimen name="dimen180">180dp</dimen>
     <dimen name="dimen32">32dp</dimen>
+    <dimen name="dimen64">64dp</dimen>
 </resources>

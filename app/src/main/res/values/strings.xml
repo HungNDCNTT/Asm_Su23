@@ -10,4 +10,17 @@
     <string name="btn_sign_in">Đăng Nhập</string>
     <string name="btn_sign_up">Đăng Ký</string>
     <string name="btn_back">Trở về</string>
+    <string name="employ_management_title">QUẢN LÝ NHÂN SỰ</string>
+    <string name="software_title">FPOLY SOFTWARE COMPANY</string>
+    <string name="department_title">Phòng ban</string>
+    <string name="exit_title">Thoát</string>
+    <string name="employee_title">Nhân Viên</string>
+    <string name="human_title">Nhân Sự</string>
+    <string name="administrative_title">Hành chính</string>
+    <string name="training_title">Đào tạo</string>
+    <string name="search_title">Search</string>
+    <string name="add_new_mem">Thêm nhân viên mới</string>
+    <string name="employee_code">Mã NV:</string>
+    <string name="name_title">Họ tên:</string>
+    <string name="department_tit">Phòng ban:</string>
 </resources>
